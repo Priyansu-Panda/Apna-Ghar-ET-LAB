@@ -11,7 +11,7 @@ async function uploadFile(files){
     const result = await imageKitClient.upload({
         file: files.buffer.toString("base64"),
         fileName: "images_"+Date.now(),
-        folder:"apna_ghar",  
+        folder:"apna_ghar/property_images"
     });
     return result;
 }
