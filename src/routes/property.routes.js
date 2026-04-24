@@ -13,17 +13,17 @@ const upload = multer({
 
 
 // router.get("/dashboard", )
-router.get("/api/properties", authMiddleware.authUser, propertyController.getAllProperties);
-router.get("/api/properties/:id",authMiddleware.authUser, propertyController.getAllPropertiesById);
+router.get("/properties", authMiddleware.authUser, propertyController.getAllProperties);
+router.get("/properties/:id",authMiddleware.authUser, propertyController.getAllPropertiesById);
 
-// router.post("/api/properties", authMiddleware.authOwner, upload.array("images", 10), createPropertyValidator, propertyController.createProperty)
-router.post("/api/properties", authMiddleware.authOwner, upload.array("images", 10), propertyController.createProperty)
+// router.post("/apiproperties", authMiddleware.authOwner, upload.array("images", 10), createPropertyValidator, propertyController.createProperty)
+router.post("/properties", authMiddleware.authOwner, upload.array("images", 10), propertyController.createProperty)
 
-// router.post("/api/properties", authMiddleware.authOwner, upload.single("images"), propertyController.createProperty)
-// router.post("/api/properties/:id",)
+// router.post("/apiproperties", authMiddleware.authOwner, upload.single("images"), propertyController.createProperty)
+// router.post("/properties/:id",)
 
-router.put("/api/properties/:id",authMiddleware.authOwner, upload.single("images"), propertyController.updatePropertyById)
-// router.put("/api/properties/:id",authMiddleware.authOwner, upload.single("images"), updatePropertyValidator, propertyController.updatePropertyById)
-router.delete("/api/properties/:id", authMiddleware.authOwner, propertyController.deletePropertyById)
+router.put("/properties/:id",authMiddleware.authOwner, upload.single("images"), propertyController.updatePropertyById)
+// router.put("/properties/:id",authMiddleware.authOwner, upload.single("images"), updatePropertyValidator, propertyController.updatePropertyById)
+router.delete("/properties/:id", authMiddleware.authOwner, propertyController.deletePropertyById)
 
 module.exports = router;

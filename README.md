@@ -134,7 +134,7 @@ Three middleware guards protect routes based on user identity and role:
 
 | Middleware | Who can pass | Used on |
 |---|---|---|
-| `authUser` | Any logged-in user (owner or tenant) | `GET /api/properties` |
+| `authUser` | Any logged-in user (owner or tenant) | `GET /properties` |
 | `authOwner` | Only users with `role: "owner"` | `POST`, `PUT`, `DELETE` on properties |
 | `authTenant` | Only users with `role: "tenant"` | *(For future tenant-specific routes)* |
 
@@ -220,13 +220,13 @@ Logs out the current user by clearing the auth cookie.
 
 ---
 
-### Property Routes (`/api/properties`)
+### Property Routes (`/properties`)
 
 All property routes require the user to be **logged in**. Write operations (create, update, delete) additionally require the user to have the `owner` role.
 
 ---
 
-#### `GET /api/properties`
+#### `GET /properties`
 Fetches all listed properties.
 
 **Auth:** Any logged-in user (`authUser`)
@@ -241,7 +241,7 @@ Fetches all listed properties.
 
 ---
 
-#### `GET /api/properties/:id`
+#### `GET /properties/:id`
 Fetches a single property by its MongoDB `_id`.
 
 **Auth:** Any logged-in user (`authUser`)
@@ -256,7 +256,7 @@ Fetches a single property by its MongoDB `_id`.
 
 ---
 
-#### `POST /api/properties`
+#### `POST /properties`
 Creates a new property listing with image uploads.
 
 **Auth:** Owners only (`authOwner`)
@@ -290,7 +290,7 @@ Creates a new property listing with image uploads.
 
 ---
 
-#### `PUT /api/properties/:id`
+#### `PUT /properties/:id`
 Updates an existing property.
 
 **Auth:** Owners only (`authOwner`)
@@ -319,7 +319,7 @@ You can update any text field (title, description, location, price, amenities, a
 
 ---
 
-#### `DELETE /api/properties/:id`
+#### `DELETE /properties/:id`
 Deletes a property listing.
 
 **Auth:** Owners only (`authOwner`)
