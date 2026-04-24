@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography Study Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .playlist1 { border-color: #3b82f6; background-color: #eff6ff; }
+        .playlist2 { border-color: #10b981; background-color: #ecfdf5; }
+        .split { border-color: #8b5cf6; background-color: #f5f3ff; }
+        .missing { border-color: #ef4444; background-color: #fef2f2; }
+    </style>
+</head>
+<body class="text-slate-800 p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Cryptography Exam Roadmap</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Your step-by-step visual guide to mastering the syllabus using Abhishek Sharma (Playlist 1) and Neso Academy (Playlist 2).</p>
+        </header>
+
+        <!-- Legend -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 md:p-6 mb-10 flex flex-wrap justify-center gap-4 md:gap-8">
+            <div class="flex items-center gap-2">
+                <span class="w-4 h-4 rounded-full bg-emerald-500"></span>
+                <span class="font-semibold text-sm">Playlist 2 (Neso Academy)</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-4 h-4 rounded-full bg-blue-500"></span>
+                <span class="font-semibold text-sm">Playlist 1 (Abhishek Sharma)</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-4 h-4 rounded-full bg-purple-500"></span>
+                <span class="font-semibold text-sm">Split / Both Playlists</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-4 h-4 rounded-full bg-red-500"></span>
+                <span class="font-semibold text-sm">Self-Study (Not in Playlists)</span>
+            </div>
+        </div>
+
+        <!-- Timeline Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Module 1 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border-t-4 border-emerald-500 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-emerald-600 uppercase">Module 1</span>
+                            <h2 class="text-xl font-bold text-slate-900 mt-1">Foundations & Ciphers</h2>
+                        </div>
+                        <i data-lucide="shield" class="text-emerald-500"></i>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Security concepts, attacks, and classic substitution/transposition techniques.</p>
+                    
+                    <div class="playlist2 p-3 rounded-lg border-l-4 mb-4">
+                        <p class="text-xs font-bold text-emerald-700 uppercase mb-2">Watch Playlist 2 Exclusively</p>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 2-11</span>
+                                <span>CIA Triad, Attacks, Mechanisms & Crypto Basics</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 12-25</span>
+                                <span>Caesar, Playfair, Hill, Vigenere, Vernam, Rail Fence, Row Transposition</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border-t-4 border-emerald-500 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-emerald-600 uppercase">Module 2</span>
+                            <h2 class="text-xl font-bold text-slate-900 mt-1">Math & Block Ciphers</h2>
+                        </div>
+                        <i data-lucide="calculator" class="text-emerald-500"></i>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Modular arithmetic, Euclidean algorithms, GF, DES, and AES.</p>
+                    
+                    <div class="playlist2 p-3 rounded-lg border-l-4">
+                        <p class="text-xs font-bold text-emerald-700 uppercase mb-2">Watch Playlist 2 Exclusively</p>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 29-37</span>
+                                <span>Modular Arithmetic & Euclidean Alg.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 44-46</span>
+                                <span>Extended Euclidean</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 54-56</span>
+                                <span>Groups, Rings, Fields (GF)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 57-69</span>
+                                <span>DES, Triple DES & AES (Encryption/Decryption)</span>
+                            </li>
+                             <li class="flex items-start gap-2">
+                                <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 71-79</span>
+                                <span>Modes of Operation & PRNG</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border-t-4 border-purple-500 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-purple-600 uppercase">Module 3</span>
+                            <h2 class="text-xl font-bold text-slate-900 mt-1">Public Key Crypto</h2>
+                        </div>
+                        <i data-lucide="key" class="text-purple-500"></i>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Number theory theorems and Asymmetric algorithms (RSA, ECC).</p>
+                    
+                    <div class="split p-3 rounded-lg border-l-4 mb-3">
+                        <p class="text-xs font-bold text-purple-700 uppercase mb-2">Step 1: The Math (Playlist 2)</p>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="bg-purple-200 text-purple-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 38-41</span>
+                                <span>Euler & Fermat Theorems</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-purple-200 text-purple-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 47-53</span>
+                                <span>CRT, Discrete Log, Prime Factoring</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="playlist1 p-3 rounded-lg border-l-4">
+                        <p class="text-xs font-bold text-blue-700 uppercase mb-2">Step 2: Algorithms (Playlist 1)</p>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 24, 26</span>
+                                <span>RSA & ElGamal Cryptosystems</span>
+                            </li>
+                             <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 27, 47</span>
+                                <span>Diffie-Hellman & Elliptic Curve (ECC)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border-t-4 border-blue-500 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-blue-600 uppercase">Module 4</span>
+                            <h2 class="text-xl font-bold text-slate-900 mt-1">Hashes & Signatures</h2>
+                        </div>
+                        <i data-lucide="file-check-2" class="text-blue-500"></i>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Message integrity, Hash functions (MD5/SHA), MAC, and Digital Signatures.</p>
+                    
+                    <div class="playlist1 p-3 rounded-lg border-l-4">
+                        <p class="text-xs font-bold text-blue-700 uppercase mb-2">Watch Playlist 1 Exclusively</p>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 44, 31, 32</span>
+                                <span>Hash Functions, MD5 & SHA family</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 38-40</span>
+                                <span>Message Authentication & MAC</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 34, 41-42</span>
+                                <span>Digital Signatures & ElGamal Signature</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 5 (Covered) -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border-t-4 border-blue-500 flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-blue-600 uppercase">Module 5</span>
+                            <h2 class="text-xl font-bold text-slate-900 mt-1">Network Security</h2>
+                        </div>
+                        <i data-lucide="network" class="text-blue-500"></i>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">Key distribution, Email security, SSL/TLS, and basic IPSec/Firewalls.</p>
+                    
+                    <div class="playlist1 p-3 rounded-lg border-l-4 mb-4">
+                        <p class="text-xs font-bold text-blue-700 uppercase mb-2">Watch Playlist 1</p>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 35, 36</span>
+                                <span>Key Dist., Certs (X.509), Kerberos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 59, 60, 64</span>
+                                <span>E-mail Security: PGP, S/MIME</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded font-bold mt-0.5">V: 38, 39, 50</span>
+                                <span>SSL/TLS, IPSec (ESP), Firewalls</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 5 (Missing / Self Study) -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border-t-4 border-red-500 flex flex-col relative">
+                <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">CRITICAL</div>
+                <div class="p-6 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-red-600 uppercase">Self-Study</span>
+                            <h2 class="text-xl font-bold text-slate-900 mt-1">The Missing Topics</h2>
+                        </div>
+                        <i data-lucide="book-open" class="text-red-500"></i>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">These 3 topics are <strong class="text-red-600">NOT</strong> in the playlists. Read textbook or notes.</p>
+                    
+                    <div class="missing p-3 rounded-lg border-l-4">
+                        <p class="text-xs font-bold text-red-700 uppercase mb-2">Topics to Research</p>
+                        <ul class="text-sm space-y-3 font-medium text-red-900">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="alert-circle" class="w-4 h-4 text-red-500"></i>
+                                Internet Key Exchange (IKE)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="alert-circle" class="w-4 h-4 text-red-500"></i>
+                                Malicious Software & Viruses
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="alert-circle" class="w-4 h-4 text-red-500"></i>
+                                Intrusion Detection Systems (IDS)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
